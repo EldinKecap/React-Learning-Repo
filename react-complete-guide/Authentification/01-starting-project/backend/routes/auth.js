@@ -8,7 +8,7 @@ const router = express.Router();
 router.post('/signup', async (req, res, next) => {
   const data = req.body;
   let errors = {};
-
+  console.log('yo');
   if (!isValidEmail(data.email)) {
     errors.email = 'Invalid email.';
   } else {
